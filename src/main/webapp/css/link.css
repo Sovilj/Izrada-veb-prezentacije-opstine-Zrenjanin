@@ -1,0 +1,398 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*  Created on : Aug 1, 2019, 11:08:14 AM
+    Author     : Stefan
+*/
+.selector-for-some-widget {
+    box-sizing: content-box;
+}
+
+.body-background {
+    background: rgb(210,210,210);
+}
+.blue-background {
+    background: rgb(12,64,119);
+}
+/* ----------------------NAVBAR---------------------*/
+.navbar-background {
+    /* background: rgba(0,0,0,0.3);*/
+    background-image: linear-gradient( rgba(0,0,0,0.6), rgba(0,0,0,0));
+}
+.navbar {
+    margin-left: 153px;
+    height: 7%;
+
+}
+.navbar-nav li a {
+    color:rgb(240,240,240) !important;
+}
+.navbar-nav li a:hover {
+    color:rgb(200,200,200) !important;
+}
+.megamenu {
+    position: static;
+}
+
+.megamenu .dropdown-menu {
+    background: rgb(12,64,119);
+    border: none;
+    width: 100%;
+    /* margin-left: 3px;*/
+    margin-top: -5px;
+}
+
+#right-list li a {
+    color:rgb(240,240,240) !important;
+    margin-top: 10px;
+}
+#right-list li a:hover {
+    color:rgb(200,200,200) !important;
+
+}
+
+.megamenu:hover .dropdown-menu {display: block;}
+
+.container .row{
+    margin-left: -120px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    height: 200px;
+}
+.col-lg-4 .row{
+    margin-left: 0px;
+    font-size: 14px;
+    line-height: 80%;
+    align-items: baseline;
+    justify-content: flex-start;
+}
+.col-lg-4 .row .col{
+    margin-left: 0px;
+
+}
+.col-lg-6 .row{
+    margin-left: 0px;
+    font-size: 14px;
+    line-height: 80%;
+    align-items: baseline;
+    justify-content: flex-start;
+}
+.col-lg-6 .row .col{
+    margin-left: 0px;
+
+}
+.col-lg-8 .row{
+    margin-left: 0px;
+    font-size: 14px;
+    line-height: 80%;
+    align-items: baseline;
+    justify-content: flex-start;
+}
+.col-lg-8 .row .col{
+    margin-left: 0px;
+    padding: 5px 5px;
+}
+
+.hr-red {
+    border-top: 2px solid red;
+    margin: 0px 0px;
+}
+.navbar-nav .container .col li a {
+    color: white;
+}
+
+.menu-heading{
+    color:white;
+}
+
+.swap-on-hover-nav img{
+    width: 25px;
+    height: 20px;
+}
+.swap-on-hover-nav img:last-child{display:none}
+.swap-on-hover-nav:hover img:first-child{display:none}
+.swap-on-hover-nav:hover img:last-child{display:inline-block}
+
+
+
+.live-img {
+    width: 100%;
+    height: 125px;
+    object-fit: cover;
+}
+.live-h6{
+    color:rgb(240,240,240);
+}
+.live-a {
+    text-decoration: none;
+}
+.live-a:hover {
+    text-decoration: none;
+}
+
+
+
+
+/* ----------------------SIDENAV---------------------*/
+
+.sidenav {
+    height: 100%;
+    width: 150px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(240,240,240);
+    overflow-x: hidden;
+}
+
+
+.sidenav a {
+    color: rgb(200,200,200) ;
+    padding: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+}
+
+.sidenav a:hover {
+    background-color: rgb(207,207,207);
+    color: rgb(12,64,119);
+    font-weight: bold;
+}
+.onDisplay {
+    background-color: rgb(207,207,207);
+    color: rgb(12,64,119) !important;
+    font-weight: bold;
+}
+
+#home-icon:hover{
+    background-color: rgb(240,240,240)!important;
+}
+
+.a-img-active {
+    background-color: rgb(240,240,240) !important;
+}
+.active{
+    background-color: rgb(207,207,207);
+    color: rgb(12,64,119) !important;
+    font-weight: bold;
+}
+
+.sidenav .sidenav-img img {
+    position: absolute;
+    top: 5%;
+    left: 20%;
+    padding: 5px;
+    width: 100px;
+}
+.sidenav .sidenav-links {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+
+}
+.swap-on-hover img{
+    width: 65px;
+    height: 40px;
+}
+.swap-on-hover img:last-child{display:none}
+.swap-on-hover:hover img:first-child{display:none}
+.swap-on-hover:hover img:last-child{display:inline-block}
+
+
+
+.chat-icon img{
+    width: 40px;
+    height: 35px;
+    margin: 0px 0px;
+    border-radius: 10px;
+}
+
+.content {
+    margin-left:150px;
+    padding-left: 0px;
+
+}
+/* ----------------------SLIDESHOW---------------------*/
+.main-background .carousel-inner img {
+    width: 100%;
+    height: 600px;
+    margin: 0px 0px;
+    padding: 0px 0px;
+}
+
+.main-background .carousel {
+    z-index: -1;
+    position: fixed;
+    left: 153px;
+    right: 0px;
+    top: -100px;
+}
+.main-content {
+    padding-left: 3px;
+
+}
+
+/* ----------------------MAIN---------------------*/
+
+.div-main-title {
+    width: 100%;
+    height: 15%;
+    color: rgb(250,250,250);
+    padding-left: 20px;
+}
+.div-main-title hr{
+    border-top : 1px solid white;
+    margin: 0px 0px;
+    padding: 0px 0px;
+    width: 70px;
+}
+.div-main-title .main-title-1{
+    font-family: "Times New Roman";
+    font-size: 25px;
+    letter-spacing: 3px;
+}
+.div-main-title .main-title-2{
+    font-family: "Tahoma";
+    font-size: 15px;
+    letter-spacing: 3px;
+    padding-bottom: 20px;
+}
+.div-main-title .search-container input[type=text] {
+    padding: 5px 5px;
+    font-size: 16px;
+    border: none;
+    background: rgba(240,240,240,0.9);
+    position: absolute;
+    left: 80%;
+    top: 80px;
+}
+
+.div-main-title .search-container button {
+    padding: 5px 11px;
+    margin-left: 188px;
+    background: rgba(240,240,240,0.9);
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    left: 80%;
+    top: 80px;
+}
+
+.div-main-title .search-container button:hover {
+    background: rgb(200,200,200);
+}
+
+
+.div-sidepanel {
+
+    background: rgb(158,179,201);
+}
+.div-center {
+
+    background: rgb(240,240,240);
+}
+.div-main-content {
+    position: absolute;
+    right: 15px;
+    left: 168px;
+}
+.div-center .row {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 20px;
+    width: 100%;
+
+
+}
+#main-row {
+    padding-top: 5%;
+}
+
+.div-box{
+    padding: 2px 8px;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 20px;
+    background: rgb(227,28,36);
+    color: rgb(240,240,240);
+    font-weight: bold;
+}
+
+.div-center .saziv-slike .col {
+    padding: 0px 0px;
+    margin: 0px 0px;
+}
+.div-center .saziv-slike img {
+    padding: 0px 0px;
+    margin: 0px 0px;
+    width: 100%;
+}
+.sidepanel-links {
+    margin-left: 20px;
+    margin-top: 50px;
+
+}
+.sidepanel-links a {
+    color: rgb(240,240,240);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+.sidepanel-links a:hover{
+    color: rgb(12,64,119);
+    text-decoration: none;
+    text-transform: uppercase;
+
+}
+
+
+#italic-h6 {
+    font-style: italic;
+}
+#main-row-izvestaji{
+    padding-top: 5%;
+    min-height: 800px;
+}
+#main-row-eparlament{
+    padding-top: 5%;
+    min-height: 800px;
+}
+#main-row-vesti{
+    padding-top: 5%;
+    min-height: 800px;
+}
+.oglasiKonkursi .row {
+    background: rgb(215,227,235);
+    width: 100%;
+    padding: 10px 10px;
+    margin-left: 0px;
+    margin-top: 10px;
+}
+.img-center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+#img-anketa{
+    
+    width: 80%;
+}
+.img-vece{
+    width: 90% !important;
+}
+
+.main-center-img-1 {
+    width: 100%;
+    margin-top: 30%;
+}
+.main-center-img-2 {
+    width: 100%;
+    margin-top: 60%;
+}
