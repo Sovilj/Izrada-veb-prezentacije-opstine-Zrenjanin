@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+    <head>
+        <title>Skupština Grada Zrenjanin</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+        <link rel="stylesheet" type="text/css" href="../css/link.css"/>
+
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" type="text/javascript"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" type="text/javascript"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
+
+        <script src="../js/link.js" type="text/javascript"></script>
+    </head>
+    <body class="body-background">
+
+        <ui:composition template="template-link.xhtml">
+            <ui:define name="windowTitle">
+                Gradsko vece
+            </ui:define>
+
+            <!--======================================================-->
+
+            <ui:define name="sidenav">
+                <ui:include src="sidebar-link.xhtml"/>
+            </ui:define>
+
+            <!--======================================================-->
+            <ui:define name="navbar">
+                <ui:include src="navbar-link.xhtml"/>
+            </ui:define>
+
+
+            <!--==============================================================-->
+
+            <ui:define name="content">
+                <div class="main-background">
+                    <div class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <!-- <div class="carousel-item active">
+                                 <img class="d-block w-100" src="https://pbs.twimg.com/media/CtcOuSDWIAACk6k.jpg" alt="First slide">
+                             </div>
+                             <div class="carousel-item">
+                                 <img class="d-block w-100" src="https://genesis.rs/wp-content/uploads/2017/05/Grad_Zrenjanin-1335x780.jpg" alt="Second slide">
+                             </div>
+                             <div class="carousel-item">
+                                 <img class="d-block w-100" src="http://rtvsantos.com/wp-content/uploads/2018/11/46501717_256299365054155_4357019368584904704_n.jpg" alt="Third slide">
+                             </div>
+                            -->
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="https://www.zrklik.com/wp-content/uploads/2017/10/Screenshot_20171020-160416-1.png" alt="Third slide"/>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <!--==============================================================-->
+                <div class="main-content" >
+
+                    <div class="div-main-title" id="1">
+                        <br/><br/><br/>
+                        <div class="main-title-1">Grad Zrenjanin </div>
+                        <hr/>
+                        <div class="main-title-2">Republika Srbija</div>
+
+                        <div class="search-container">
+                            <form action="">
+                                <input type="text" placeholder="Pretraga.." name="search"/>
+                                <button type="submit"><i class="fa fa-search"></i></button>
+                            </form>
+                        </div>
+
+                    </div>
+                    <!--==============================================================-->
+
+                    <div class="div-main-content">
+
+                        <div class="row">
+                            <div class="div-center col-xl-9">
+                                <div class="div-box">
+                                    Gradsko vece            
+                                </div>
+                                <div class="row" id="main-row-eparlament">
+                                    <div class="col">
+                                        <h2>Gradsko vece</h2>
+                                        <h6>Zrenjanin avgust 2019.</h6>
+
+
+
+                                        <h5 align="center"> Članovi Gradskog veća, po funkciji:</h5>
+
+                                        <div class="row ">
+                                            <div class="col-lg-3">
+                                                <img class="img-vece"  src="http://www.zrenjanin.rs/userfiles/image/Funkcioneri/gradsko_vece_2016/Gradonacelnik_Zrenjanina_Cedmoir_Janjic_m.JPG" alt="odbornikImg"/>
+                                            </div>
+                                            <div class="col">
+                                                <h5>Čedomir Janjić</h5> - Predsednik Gradskog veća
+
+                                            </div>
+                                        </div>
+                                        <div class="row ">
+                                            <div class="col-lg-3">
+                                                <img class="img-vece" src="http://www.zrenjanin.rs/userfiles/image/Funkcioneri/zamenik_gradonacelnika/Sasa_Santovac_mala.JPG" alt="odbornikImg"/>
+                                            </div>
+                                            <div class="col">
+                                                <h5>Saša Santovac</h5> -  Član Gradskog veća po funkciji
+
+                                            </div>
+                                        </div>
+                                        <h5 align="center"> Članovi Gradskog veća:</h5>
+                                        <div class="row ">
+                                            <div class="col-lg-2">
+                                                <img src="http://www.zrenjanin.rs/userfiles/image/GradskaSkupstina/saziv2016/odbornici_sns/Danijela_Micevic_m.jpg" alt="odbornikImg"/>
+                                            </div>
+                                            <div class="col">
+                                                <h5>Radovan Višekruna</h5> 
+                                                Rođen je 09.11.1954. godine. Po struci je diplomirani pravnik. Ima radni staž od 37 godina, zaposlen je u Fondu za penzijsko i invalidsko osiguranje kao Kontrolor nacrta rešenja. Oženjen je, otac troje dece i deda troje unučadi.
+                                                Član je Partije ujedinjenih penzionera Srbije.
+                                            </div>
+                                        </div>
+                                        <div class="row ">
+                                            <div class="col-lg-2">
+                                                <img src="http://www.zrenjanin.rs/userfiles/image/GradskaSkupstina/saziv2016/odbornici_sns/Maja_Ivkovic_mala.jpg" alt="odbornikImg"/>
+                                            </div>
+                                            <div class="col">
+                                                <h5>Slaviša Vlačić</h5> 
+                                                Rođen, živi i radi u Zrenjaninu, po zvanju master inženjer mašinstva, trenutno na postdiplomskim studijama na Fakultetu tehničkih nauka u Novom Sadu za zvanje specijalista strukovni inženjer elektrotehnike i računarstva.
+                                                Zaposlen je u kompaniji “Telekom Srbija”, kao šef službe za mrežne operacije Zrenjanin.
+                                                Oženjen je, otac dvoje dece.
+                                                Član je Srpske napredne stranke.
+                                            </div>
+                                        </div>
+                                        <div class="row ">
+                                            <div class="col-lg-2">
+                                                <img src="http://www.zrenjanin.rs/userfiles/image/GradskaSkupstina/saziv2016/odbornici_sns/Lepa_Arambasic_mala.jpg" alt="odbornikImg"/>
+                                            </div>
+                                            <div class="col">
+                                                <h5>Dragan Vujović </h5> 
+                                                Rođen je 12.02.1961. godine. Po struci je diplomirani elektroinženjer. Ima radni staž od 29 godina, zaposlen je u SM "Inženjering"-u. Bio je član Opštinskog  veća od 2000. do 2004. godine, a od 2004. do 2009. godine bio je član Saveta za strateški razvoj grada Zrenjanina. Član je Skupštine inženjerske komore Srbije.
+                                                Oženjen je i otac dvoje dece.
+                                                Član Gradskog veća i u prethodnom sazivu.
+                                                Nestranačka je ličnost.
+                                            </div>
+                                        </div>
+                                        <div class="row ">
+                                            <div class="col-lg-2">
+                                                <img src="http://www.zrenjanin.rs/userfiles/image/GradskaSkupstina/saziv2016/odbornici_sns/Srdjan_Barac_mala.jpg" alt="odbornikImg"/>
+                                            </div>
+                                            <div class="col">
+                                                <h5>Đorđe Janku</h5>
+                                                Rođen je 27.04.1966. godine. Po struci je specijalista epizootiologije. Zaposlen je u Veterinarskom specijalističkom institutu Zrenjanin.
+
+                                            </div>
+                                        </div>
+                                        <div class="row ">
+                                            <div class="col-lg-2">
+                                                <img src="http://www.zrenjanin.rs/userfiles/image/GradskaSkupstina/saziv2016/odbornici_sns/Stanko_Blagojevic_mala.jpg" alt="odbornikImg"/>
+                                            </div>
+                                            <div class="col">
+                                                <h5>Dr Mile Kovačević  </h5>
+                                                Rođen je 1966. godine u Zrenjaninu. Po struci je doktor medicine, specijalista za plućne bolesti. Zaposlen je u Specijalnoj bolnici za plućne bolesti "Dr Vasa Savić" Zrenjanin, kao šef Odseka bolesti tuberkoloze.
+                                                Bio je član Gradskog veća u dva mandata od 2004. do 2012. godine i odbornik Skupštine grada Zrenjanina od 2012. do 2016. godine.
+                                                Član je Srpske napredne stranke.  
+                                            </div>
+                                        </div>
+                                        <div class="row ">
+                                            <div class="col-lg-2">
+                                                <img src="http://www.zrenjanin.rs/userfiles/image/GradskaSkupstina/saziv2016/odbornici_sns/Bosiljka_Bozic_mala.jpg" alt="odbornikImg"/>
+                                            </div>
+                                            <div class="col">
+                                                <h5>Pero Pilipović  </h5> 
+                                                Rođen 13.02.1970. godine u Zrenjaninu. Po struci je diplomirani ekonomista. Zaposlen je u Gradskoj upravi grada Zrenjanina od 1997. godine, raspoređen kao samostalni stručni saradnik na poslovima praćenja utroška sredstava od naknade za korišćenje mineralnih sirovina i poslovima saradnje sa naseljenim mestima u Odseku za poljoprivredu i ruralni razvoj Odeljenja za finansije. Od 2000. do 2012. godine bio je član, a zatim i predsednik Fonda naftne rente.
+                                                Oženjen je i otac jednog deteta.
+                                                Nestranačka je ličnost.
+                                            </div>
+                                        </div>
+
+                                        <div class="row ">
+                                            <div class="col-lg-2">
+                                                <img src="http://www.zrenjanin.rs/userfiles/image/GradskaSkupstina/saziv2016/odbornici_sns/Djordje_Budimir_mala.jpg" alt="odbornikImg"/>
+                                            </div>
+                                            <div class="col">
+                                                <h5>Jožef  Stojko  </h5> 
+                                                Rođen 1975. godine, profesor matematike u osnovnoj školi "Servo Mihalj" u Mužlji. 
+                                                Član Gradskog veća i u prethodnom sazivu.
+                                                Oženjen, otac dvoje dece.
+                                                Član je Saveza vojvođanskih Mađara.
+                                            </div>
+                                        </div>
+                                        <div class="row ">
+                                            <div class="col-lg-2">
+                                                <img src="http://www.zrenjanin.rs/userfiles/image/GradskaSkupstina/saziv2016/odbornici_sns/Sinisa_Vukic_mala.jpg" alt="odbornikImg"/>
+                                            </div>
+                                            <div class="col">
+                                                <h5>Dragan Vulešević  </h5>
+                                                Rođen 22.05.1958. godine u Zrenjaninu.
+                                                Završio Gimnaziju Koča Kolarov u Zrenjaninu.
+                                                Studirao na Filozofskom fakultetu u Beogradu.
+                                                Radio od 1989. godine u Turističkoj orgnizaciji Kompas Jugoslavija a potom kao direktor JP Turistički centar grada Zrenjanina.
+                                                Oženjen, otac dvoje dece.
+                                                Član Socijalističke partije Srbije.
+                                            </div>
+                                        </div>
+                                        <div class="row ">
+                                            <div class="col-lg-2">
+                                                <img src="http://www.zrenjanin.rs/userfiles/image/GradskaSkupstina/saziv2016/odbornici_sns/Nenad_Domjeskov_mala.jpg" alt="odbornikImg"/>
+                                            </div>
+                                            <div class="col">
+                                                <h5>Sanja Žurž Nedeljkov  </h5>
+                                                Rođena 10.06.1989. u Zrenjaninu.
+                                                Živi u Botošu.
+                                                Završila Pedagoški fakultet u Somboru 2012. godine, smer diplomirani učitelj a potom i dobila zvanje master učitelj-metodičar matematike.
+                                                Udata.
+                                                Član Socijalističke paprtije Srbije.
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="div-sidepanel col">
+                                <div class="div-box">
+                                    Gradska Vlast
+                                </div>
+                                <div class="sidepanel-links">
+
+                                    <ul class="list-unstyled">
+                                        <li ><a href="link-SkupstinaGrada.xhtml" class="sidepanel-link">Skupstina Grada</a></li>
+                                        <li ><a href="link-Gradonacelnik.xhtml" class="sidepanel-link">Gradonacelnik</a></li>
+                                        <li ><a href="link-GradskoVece.xhtml" class="sidepanel-link ">Gradsko Vece</a></li>
+                                        <li ><a href="link-GradskaUprava.xhtml" class="sidepanel-link ">Gradska Uprava</a></li>
+                                        <li ><a href="link-ZastitnikGradjana.xhtml" class="sidepanel-link">Zastitnik Gradjana</a></li>
+                                        <li ><a href="link-Pravobranilastvo.xhtml" class="sidepanel-link">Pravobranilastvo</a></li>
+
+
+
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+
+
+
+
+
+                </div>
+
+
+
+            </ui:define>
+
+
+
+        </ui:composition>
+
+
+    </body>
+</html>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+    <head>
+        <title>Skupština Grada Zrenjanin</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+        <link rel="stylesheet" type="text/css" href="../css/link.css"/>
+
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" type="text/javascript"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" type="text/javascript"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
+
+        <script src="../js/link.js" type="text/javascript"></script>
+    </head>
+    <body class="body-background">
+
+        <ui:composition template="template-link.xhtml">
+            <ui:define name="windowTitle">
+                Tradicija
+            </ui:define>
+
+            <!--======================================================-->
+
+            <ui:define name="sidenav">
+                <ui:include src="sidebar-link.xhtml"/>
+            </ui:define>
+
+            <!--======================================================-->
+            <ui:define name="navbar">
+                <ui:include src="navbar-link.xhtml"/>
+            </ui:define>
+
+
+            <!--==============================================================-->
+
+            <ui:define name="content">
+                <div class="main-background">
+                    <div class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <!-- <div class="carousel-item active">
+                                 <img class="d-block w-100" src="https://pbs.twimg.com/media/CtcOuSDWIAACk6k.jpg" alt="First slide">
+                             </div>
+                             <div class="carousel-item">
+                                 <img class="d-block w-100" src="https://genesis.rs/wp-content/uploads/2017/05/Grad_Zrenjanin-1335x780.jpg" alt="Second slide">
+                             </div>
+                             <div class="carousel-item">
+                                 <img class="d-block w-100" src="http://rtvsantos.com/wp-content/uploads/2018/11/46501717_256299365054155_4357019368584904704_n.jpg" alt="Third slide">
+                             </div>
+                            -->
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="https://www.zrklik.com/wp-content/uploads/2017/10/Screenshot_20171020-160416-1.png" alt="Third slide"/>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <!--==============================================================-->
+                <div class="main-content" >
+
+                    <div class="div-main-title" id="1">
+                        <br/><br/><br/>
+                        <div class="main-title-1">Grad Zrenjanin </div>
+                        <hr/>
+                        <div class="main-title-2">Republika Srbija</div>
+
+                        <div class="search-container">
+                            <form action="">
+                                <input type="text" placeholder="Pretraga.." name="search"/>
+                                <button type="submit"><i class="fa fa-search"></i></button>
+                            </form>
+                        </div>
+
+                    </div>
+                    <!--==============================================================-->
+
+                    <div class="div-main-content">
+
+                        <div class="row">
+                            <div class="div-center col-xl-9">
+                                <div class="div-box">
+                                    Tradicija                     
+                                </div>
+                                <div class="row" id="main-row-eparlament">
+                                    <div class="col">
+                                        <h2>Tradicija privrede Zrenjanina</h2>
+                                        <h6>Zrenjanin avgust 2019.</h6>
+
+
+
+                                        <p>
+                                            Dobri poznavaoci istorije zrenjaninskog regiona početke ovdašnje privrede smeštaju u period turske vladavine, kada je poznati turski vojskovođa Mehmed-paša Sokolović proglasio Zrenjanin (tada Bečkerek) sedištem sandžaka i naložio da se u njemu izgrade prve zanatske radnje.
+                                            <br/>
+                                            Posle odlaska Turaka, u grad se planski naseljavaju pripadnici naroda iz srednje Evrope, i sa sobom donose nove tehnologije. Projekat isušivanja okolnih močvara izgradnjom sistema kanala i njihovog pretvaranja u obradive površine, te povećanje poljoprivredne proizvodnje, zahtevali su viši nivo prerade sirovina i transporta, tako da se u toku industrijske revolucije otvaraju, u početku mali, a zatim i veliki pogoni za preradu sirovina, poput pivara, pogona za preradu lana, itd.
+                                            <br/>
+                                            Godine 1872. Bečkerek dobija status grada.
+                                        </p>
+
+                                        <img  id="img-anketa" class="img-center" src="http://www.zrenjanin.rs/userfiles/image/xyz/5_Crno%20belo%20povelja.jpg" alt="slika1"/>
+
+                                        <p>
+                                            U periodu posle drugog svetskog  rata, Zrenjanin je bio industrijski centar Banata i jedan od vodećih centara Vojvodine i Jugoslavije.
+                                            <br/>
+                                            Ranih 90-tih godina prošlog veka, Zrenjanin je dobio reputaciju "najvećeg proizvođača hrane", zahvaljujući velikim proizvodnim mogućnostima najistaknutijeg proizvođača hrane "Servo Mihalja"- koncerna koji je zapošljavao oko 25.000 ljudi. Raspadom Jugoslavije, usled ekonomskih sankcija i međunarodne izolacije zemlje, velike inflacije i blizine ratišta,  privreda Zrenjanina znatno je oslabila, jer je prethodna proizvodnja bila usmerena ka tržištu od 25 miliona stanovnika i izvozu.
+
+                                        </p>
+                                        <img  id="img-anketa" class="img-center" src="http://www.zrenjanin.rs/userfiles/image/xyz/6_Crno%20belo.jpg" alt="slika2"/>
+
+                                        <p>
+                                            Danas Zrenjanin predstavlja jedno od najatraktivnijih mesta za ulaganje u Republici Srbiji, zahvaljujući infrastrukturno opremljenim novim industrijskim zonama. Od 10 najvećih greenfield investicija u Srbiji za 2008. godinu – tri su svoje mesto našle u Zrenjaninu. Projektom "Zrenjanin Open" privreda grada počela je da jača, pogotovo zato što više ne postoje prepreke političke prirode i zato što je položaj grada na veoma atraktivnoj lokaciji, a lokalno stanovništvo je visoko stručno u većini industrijskih grana i kulturno se uklapa u srednjeevropski milje. Proizvodna infratsruktura je relativno dobro očuvana. Domaće firme imaju bogatog iskustva u radu sa stranim investitorima i poslodavcima, i navikle su na rad po zapadnim standardima poslovanja.
+
+
+                                        </p>
+
+                                    </div>
+
+
+
+                                </div>
+
+
+
+
+
+                            </div>
+                            <div class="div-sidepanel col">
+                                <div class="div-box">
+                                    Privreda
+                                </div>
+                                <div class="sidepanel-links">
+
+                                    <ul class="list-unstyled">
+                                        <li ><a href="link-Tradicija.xhtml" class="sidepanel-link">Tradicija</a></li>
+                                        <li ><a href="link-GeostrateskiPolozaj.xhtml" class="sidepanel-link">Geostrateski Polozaj</a></li>
+                                        <li ><a href="link-PrivredniKapaciteti.xhtml" class="sidepanel-link ">Privredni Kapaciteti</a></li>
+                                        <li ><a href="link-Aerodrom.xhtml" class="sidepanel-link ">Aerodrom</a></li>
+                                        <li ><a href="link-SlobodnaZona.xhtml" class="sidepanel-link">Slobodna Zona</a></li>
+                                        <li ><a href="link-BiznisInkubator.xhtml" class="sidepanel-link">Biznis Inkubator</a></li>
+                                        <li ><a href="link-FinansijskiPodsticaj.xhtml" class="sidepanel-link ">Finansijski Podsticaj</a></li>
+                                        <li ><a href="link-TrgovinskiSporazumi.xhtml" class="sidepanel-link">Trgovinski Sporazumi</a></li>
+                                        <li ><a href="link-Download.xhtml" class="sidepanel-link">Download</a></li>
+                                        <li ><a href="link-LjudskiResursi.xhtml" class="sidepanel-link">Ljudski Resursi</a></li>
+
+
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+
+
+
+
+
+                </div>
+
+
+
+            </ui:define>
+
+
+
+        </ui:composition>
+
+
+    </body>
+</html>

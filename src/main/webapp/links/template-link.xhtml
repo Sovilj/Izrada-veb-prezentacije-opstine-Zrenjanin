@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://java.sun.com/jsf/core" 
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+    <head>
+        <title>
+            <ui:insert name="windowTitle">
+                Podrazumevani naslov
+            </ui:insert>
+        </title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+        <link rel="stylesheet" type="text/css" href="../css/link.css"/>
+
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <script src="../js/link.js"></script>
+    </head>
+    <body class="body-background">
+
+        <div class="sidenav">
+            <ui:insert name="sidenav">
+
+                sidebar
+
+            </ui:insert>
+        </div>
+
+        <!--==================================================================-->
+
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-background fixed-top shadow-sm">
+            <ui:insert name="navbar">
+
+                navbar
+
+            </ui:insert>
+        </nav>
+
+        <!--==================================================================-->
+
+        <div class="content">
+            <ui:insert name="content">
+
+                content
+
+            </ui:insert>
+        </div>
+
+
+
+
+
+    </body>
+</html>

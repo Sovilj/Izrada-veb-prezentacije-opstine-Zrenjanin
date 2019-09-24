@@ -1,0 +1,775 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://java.sun.com/jsf/core" 
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://xmlns.jcp.org/jsf/passthrough">
+    <head>
+        <title>Grad Zrenjanin</title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+        <link rel="stylesheet" type="text/css" href="css/main.css"/>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+        <script src="js/main.js"></script>
+    </head>
+    <body class="body-background">
+        <ui:composition template="template.xhtml">
+
+            <ui:define name="windowTitle">
+                City of Zrenjanin
+            </ui:define>
+            <!--==================================================================-->
+            <ui:define name="sidenav">
+                <ui:include src="sidebar_en.xhtml"/>
+            </ui:define>
+            <!--==================================================================-->
+
+            <ui:define name="navbar">
+                <ui:include src="navbar_en.xhtml"/>
+            </ui:define>
+
+            <!--==================================================================-->
+
+            <ui:define name="content">
+                <div class="main-background">
+                    <div class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="http://rtvsantos.com/wp-content/uploads/2017/08/Centar-Zrenjanina_resize-1.jpg" alt="Fourt slide"/>
+
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="https://genesis.rs/wp-content/uploads/2017/05/Grad_Zrenjanin-1335x780.jpg" alt="Second slide"/>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="http://rtvsantos.com/wp-content/uploads/2018/11/46501717_256299365054155_4357019368584904704_n.jpg" alt="Third slide"/>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="https://www.zrklik.com/wp-content/uploads/2017/10/Screenshot_20171020-160416-1.png" alt="Fourt slide"/>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="https://www.dubinskopranjezrenjanin.co.rs/wp-content/uploads/2018/02/zrenjanin.jpg" alt="First slide"/>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <!--==================================================================-->
+                <div class="main-content" >
+
+                    <div class="div-main" id="1">
+                        <br/><br/><br/><br/>
+                        <div class="main-title-1">City of Zrenjanin </div>
+                        <hr class="title-1-hr"/>
+                        <div class="main-title-2">Republic of Serbia </div>
+                        <br/><br/>
+
+                        <p class="main-title-3" align="center">
+                            A place of good energy
+
+                        </p>
+                        <hr class="title-3-hr" align="center" />
+
+                        <div class="search-container">
+                            <form action="">
+                                <input type="text" placeholder="Search.." name="search"/>
+                                <button type="submit"><i class="fa fa-search"></i></button>
+                            </form>
+                        </div>
+
+                    </div>
+                    <!--==================================================================-->
+
+                    <div class="div-vesti" id="2">
+                        <div class="link-vesti">
+                            NEWS
+                        </div>
+                        <div class="vesti-content">
+
+                            <div id="carouselExample" class="carousel slide"  data-interval="false" data-ride="carousel">
+                                <h:form>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active " >
+
+                                            <div class="row">
+
+                                                <h:commandLink action="#{server.buttonClickedEn(0)}" class="card col" style="width: 18rem;">
+                                                    <img src="#{server.newsArrayEn[0].imgUrl}" class="card-img-top" alt="..."/>
+                                                    <div class="card-body">
+                                                        <h6 class="card-subtitle mb-2 text-muted">#{server.newsArrayEn[0].dateStr}</h6>
+                                                        <h5 class="card-title">#{server.newsArrayEn[0].title}</h5>
+                                                    </div>
+
+                                                </h:commandLink>
+
+                                                <h:commandLink action="#{server.buttonClickedEn(1)}" class="card col" style="width: 18rem;">
+                                                    <img src="#{server.newsArrayEn[1].imgUrl}" class="card-img-top" alt="..."/>
+                                                    <div class="card-body">
+                                                        <h6 class="card-subtitle mb-2 text-muted">#{server.newsArrayEn[1].dateStr}</h6>
+                                                        <h5 class="card-title">#{server.newsArrayEn[1].title}</h5>
+                                                    </div>
+
+                                                </h:commandLink>
+                                                <h:commandLink action="#{server.buttonClickedEn(2)}" class="card col" style="width: 18rem;">
+                                                    <img src="#{server.newsArrayEn[2].imgUrl}" class="card-img-top" alt="..."/>
+                                                    <div class="card-body">
+                                                        <h6 class="card-subtitle mb-2 text-muted">#{server.newsArrayEn[2].dateStr}</h6>
+                                                        <h5 class="card-title">#{server.newsArrayEn[2].title}</h5>
+                                                    </div>
+
+                                                </h:commandLink>
+                                                <h:commandLink action="#{server.buttonClickedEn(3)}" class="card col" style="width: 18rem;">
+                                                    <img src="#{server.newsArrayEn[3].imgUrl}" class="card-img-top" alt="..."/>
+                                                    <div class="card-body">
+                                                        <h6 class="card-subtitle mb-2 text-muted">#{server.newsArrayEn[3].dateStr}</h6>
+                                                        <h5 class="card-title">#{server.newsArrayEn[3].title}</h5>
+                                                    </div>
+
+                                                </h:commandLink>
+                                                <h:commandLink action="#{server.buttonClickedEn(4)}" class="card col" style="width: 18rem;">
+                                                    <img src="#{server.newsArrayEn[4].imgUrl}" class="card-img-top" alt="..."/>
+                                                    <div class="card-body">
+                                                        <h6 class="card-subtitle mb-2 text-muted">#{server.newsArrayEn[4].dateStr}</h6>
+                                                        <h5 class="card-title">#{server.newsArrayEn[4].title}</h5>
+                                                    </div>
+
+                                                </h:commandLink>
+
+                                            </div>
+
+                                        </div>
+                                        <div class="carousel-item" >
+                                            <div class="row">
+                                                <h:commandLink action="#{server.buttonClickedEn(5)}" class="card col" style="width: 18rem;">
+                                                    <img src="#{server.newsArrayEn[5].imgUrl}" class="card-img-top" alt="..."/>
+                                                    <div class="card-body">
+                                                        <h6 class="card-subtitle mb-2 text-muted">#{server.newsArrayEn[5].dateStr}</h6>
+                                                        <h5 class="card-title">#{server.newsArrayEn[5].title}</h5>
+                                                    </div>
+
+                                                </h:commandLink>
+                                                <h:commandLink action="#{server.buttonClickedEn(6)}" class="card col" style="width: 18rem;">
+                                                    <img src="#{server.newsArrayEn[6].imgUrl}" class="card-img-top" alt="..."/>
+                                                    <div class="card-body">
+                                                        <h6 class="card-subtitle mb-2 text-muted">#{server.newsArrayEn[6].dateStr}</h6>
+                                                        <h5 class="card-title">#{server.newsArrayEn[6].title}</h5>
+                                                    </div>
+
+                                                </h:commandLink>
+                                                <h:commandLink action="#{server.buttonClickedEn(7)}" class="card col" style="width: 18rem;">
+                                                    <img src="#{server.newsArrayEn[7].imgUrl}" class="card-img-top" alt="..."/>
+                                                    <div class="card-body">
+                                                        <h6 class="card-subtitle mb-2 text-muted">#{server.newsArrayEn[7].dateStr}</h6>
+                                                        <h5 class="card-title">#{server.newsArrayEn[7].title}</h5>
+                                                    </div>
+
+                                                </h:commandLink>
+                                                <h:commandLink action="#{server.buttonClickedEn(8)}" class="card col" style="width: 18rem;">
+                                                    <img src="#{server.newsArrayEn[8].imgUrl}" class="card-img-top" alt="..."/>
+                                                    <div class="card-body">
+                                                        <h6 class="card-subtitle mb-2 text-muted">#{server.newsArrayEn[8].dateStr}</h6>
+                                                        <h5 class="card-title">#{server.newsArrayEn[8].title}</h5>
+                                                    </div>
+                                                </h:commandLink>
+                                                <h:commandLink action="#{server.buttonClickedEn(9)}" class="card col" style="width: 18rem;">
+                                                    <img src="#{server.newsArrayEn[9].imgUrl}" class="card-img-top" alt="..."/>
+                                                    <div class="card-body">
+                                                        <h6 class="card-subtitle mb-2 text-muted">#{server.newsArrayEn[9].dateStr}</h6>
+                                                        <h5 class="card-title">#{server.newsArrayEn[9].title}</h5>
+                                                    </div>
+
+                                                </h:commandLink>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </h:form>
+                                <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!--==================================================================-->
+                    <div class="div-linkovi" id="3">
+                        <div class="links">
+                            QUICK LINKS
+                        </div>
+                        <div class="link-images">
+                            <div class="row">
+                                <div class="col">
+                                    <a href="#6" class="smooth">
+                                        <div class="swap-on-hover-link" >
+                                            <img src="img/chat-1.png" alt="slika1"/>
+                                            <img src="img/chat-2.png" alt="slika2"/>
+                                        </div>
+                                        <h6>Ask mayor</h6>
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a href="http://www.zrenjanin.rs/userfiles/file/Gradska%20vlast%20dokumenti/Finansije/Odluka%20o%20budzetu%20za%202019.pdf" target="blank" >
+                                        <div class="swap-on-hover-link" >
+                                            <img src="img/pie-icon-1.png" alt="slika1"/>
+                                            <img src="img/pie-icon-2.png" alt="slika2"/>
+                                        </div>
+                                        <h6>City budget</h6>
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a href="links/link-JavneNabavke.xhtml" target="blank" >
+                                        <div class="swap-on-hover-link" >
+                                            <img src="img/cart-1.png" alt="slika1"/>
+                                            <img src="img/cart-2.png" alt="slika2"/>
+                                        </div>
+                                        <h6>Public procurement</h6>
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a href="links/link-OglasiKonkursi.xhtml"  target="blank">
+                                        <div class="swap-on-hover-link" >
+                                            <img src="img/megaphone-1.png" alt="slika1"/>
+                                            <img src="img/megaphone-2.png" alt="slika2"/>
+                                        </div>
+                                        <h6>Contests and ads</h6>
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a href="links/link-Dokumenta.xhtml"  target="blank">
+                                        <div class="swap-on-hover-link" >
+                                            <img src="img/form-1.png" alt="slika1"/>
+                                            <img src="img/form-2.png" alt="slika2"/>
+                                        </div>
+                                        <h6>Forms and forms</h6>
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a href="links/link-Informator.xhtml"  target="blank">
+                                        <div class="swap-on-hover-link" >
+                                            <img src="img/info-1.png" alt="slika1"/>
+                                            <img src="img/info-2.png" alt="slika2"/>
+                                        </div>
+                                        <h6>Work informant</h6>
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a href="https://www.poverenik.rs/sr-yu/pristup-informacijama/formulari-di.html"  target="blank">
+                                        <div class="swap-on-hover-link" >
+                                            <img src="img/people-1.png" alt="slika1"/>
+                                            <img src="img/people-2.png" alt="slika2"/>
+                                        </div>
+                                        <h6>Request for information of public importance</h6>
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a href="https://lpa.gov.rs/jisportal/login"  target="blank">
+                                        <div class="swap-on-hover-link" >
+                                            <img src="img/tax-1.png" alt="slika1"/>
+                                            <img src="img/tax-2.png" alt="slika2"/>
+                                        </div>
+                                        <h6>Check your tax</h6>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!--==================================================================-->
+
+                    <div class="div-zrenjanin" id="4">
+                        <div class="link-zrenjanin">
+                            ABOUT ZRENJANIN
+                        </div>
+                        <div class="row zrenjanin-title-1">
+                            Zrenjanin through history
+                        </div>
+                        <hr class="zrenjanin-hr" align="left"/>
+                        <div class="row zrenjanin-title-2">
+                            Chronology of the most significant events
+                        </div>
+                        <div class="row">
+                            <div class="flex-parent">
+                                <div class="zrenjanin-period">
+                                    14.-17. century
+                                </div>
+                                <div class="input-flex-container">
+                                    <div class="input">
+                                        <span data-year="1326" data-info="The first mention of the name and settlement Beccerek "></span>
+                                    </div>
+                                    <div class="input">
+                                        <span data-year="1398" data-info="The Hungarian king Sigmund stayed in Beckrek"></span>
+                                    </div>
+                                    <div class="input ">
+                                        <span data-year="1403" data-info="King Sigmond hands over Beckkerek to despot Stefan Lazarevic"></span>
+                                    </div>
+                                    <div class="input">
+                                        <span data-year="1528" data-info="Construction of Viennese fortress completed"></span>
+                                    </div>
+                                    <div class="input">
+                                        <span data-year="1540" data-info="The well-known, silver-plated gospel originated from Beckrek"></span>
+                                    </div>
+                                    <div class="input">
+                                        <span data-year="1551" data-info="Mehmed Pasha Sokolovic seized the fortress Beckerek"></span>
+                                    </div>
+                                    <div class="input">
+                                        <span data-year="1696" data-info="Turkish Sultan Mustafa II visits Beccerek"></span>
+                                    </div>
+                                    <div class="input">
+                                        <span data-year="1698" data-info="Prince Eugen freed Beckierek"></span>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="flex-parent">
+                                <div class="zrenjanin-period">
+                                    18. century
+                                </div>
+                                <div class="input-flex-container">
+                                    <div class="input">
+                                        <span data-year="1701" data-info="Demolition of the Viennese fortress, to the basic provisions of the Karlovac"></span>
+                                    </div>
+                                    <div class="input">
+                                        <span data-year="1717" data-info="Austrian Prince Alexander of Wittemberg enters Vienna"></span>
+                                    </div>
+                                    <div class="input ">
+                                        <span data-year="1717" data-info="The first census, based on which there are 787 inhabitants in Beckrek"></span>
+                                    </div>
+                                    <div class="input">
+                                        <span data-year="1718" data-info="The beginning of German colonization"></span>
+                                    </div>
+                                    <div class="input">
+                                        <span data-year="1718" data-info="Imperial decision was made to divide Banat into 13 districts"></span>
+                                    </div>
+                                    <div class="input">
+                                        <span data-year="1722" data-info="First elementary school started operating"></span>
+                                    </div>
+                                    <div class="input">
+                                        <span data-year="1737" data-info="Spanish settlers named the city New Barcelona"></span>
+                                    </div>
+                                    <div class="input">
+                                        <span data-year="1738" data-info="The great plague epidemic"></span>
+                                    </div>
+                                    <div class="input">
+                                        <span data-year="1745" data-info="Sebastian Krachajzen opens the first industrial brewery"></span>
+                                    </div>
+                                    <div class="input">
+                                        <span data-year="1758" data-info=" The first Catholic church in the town square was built"></span>
+                                    </div>
+                                    <div class="input">
+                                        <span data-year="1760" data-info="Jewish municipality established "></span>
+                                    </div>
+                                    <div class="input">
+                                        <span data-year="1768" data-info="Visit of the Austrian Emperor Joseph II to Bečkareka"></span>
+                                    </div>
+                                    <div class="input">
+                                        <span data-year="1769" data-info="The first city hospital started operating"></span>
+                                    </div>
+                                    <div class="input">
+                                        <span data-year="1777" data-info="The Temple of the Presentation of the Blessed Virgin was built "></span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="flex-parent">
+                                <div class="zrenjanin-period">
+                                    19. century
+                                </div>
+                                <div class="input-flex-container">
+                                    <div class="input">
+                                        <span data-year="1807" data-info=" The fire destroyed much of the city and almost all the buildings in the city center "></span>
+                                    </div>
+                                    <div class="input">
+                                        <span data-year="1820" data-info="The County Building, today's City Hall, was built "></span>
+                                    </div>
+                                    <div class="input ">
+                                        <span data-year="1832" data-info="First street lighting installed"></span>
+                                    </div>
+                                    <div class="input">
+                                        <span data-year="1839" data-info=" City grain warehouse converted into a theater hall, the oldest in Serbia"></span>
+                                    </div>
+                                    <div class="input">
+                                        <span data-year="1846" data-info="Gymnasium started operating "></span>
+                                    </div>
+                                    <div class="input">
+                                        <span data-year="1847" data-info="The first printing house in Toronto County, Pavel Plajc, was founded"></span>
+                                    </div>
+                                    <div class="input">
+                                        <span data-year="1849" data-info="The great bourgeois revolution - the Serbian army entered Beccerek"></span>
+                                    </div>
+                                    <div class="input">
+                                        <span data-year="1850" data-info="Provincial Court in Greater Bečerek started operating"></span>
+                                    </div>
+                                    <div class="input">
+                                        <span data-year="1854" data-info="The first photography studio in the South Slavic area, Istvan Oldal, opens"></span>
+                                    </div>
+                                    <div class="input">
+                                        <span data-year="1860" data-info="The first town brick factory, Daunova, started operating"></span>
+                                    </div>
+                                    <div class="input">
+                                        <span data-year="1862" data-info="First City Singing Society - Serbian Church Singing Society founded"></span>
+                                    </div>
+                                    <div class="input">
+                                        <span data-year="1868" data-info="Construction of Roman Catholic cathedral on city square completed"></span>
+                                    </div>
+                                    <div class="input">
+                                        <span data-year="1867" data-info="Toronto Savings Bank established"></span>
+                                    </div>
+                                    <div class="input">
+                                        <span data-year="1879" data-info="For the first time, the city's streets were officially named "></span>
+                                    </div>
+                                    <div class="input">
+                                        <span data-year="1888" data-info="Completion of the reconstruction of the county building"></span>
+                                    </div>
+                                    <div class="input">
+                                        <span data-year="1889" data-info="The Veliki Beckerek - Vrsac railway was built "></span>
+                                    </div>
+                                    <div class="input">
+                                        <span data-year="1893" data-info="The first pavement in the city, on Main Street, was erected"></span>
+                                    </div>
+                                    <div class="input">
+                                        <span data-year="1896" data-info="The first power plant was built and the first electric street lamps were installed"></span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="flex-parent">
+                                <div class="zrenjanin-period">
+                                    20.-21. century
+                                </div>
+                                <div class="input-flex-container">
+                                    <div class="input">
+                                        <span data-year="1904" data-info="Big Iron and Little Bridge built"></span>
+                                    </div>
+                                    <div class="input">
+                                        <span data-year="1906" data-info="First monument erected in the town square"></span>
+                                    </div>
+                                    <div class="input">
+                                        <span data-year="1906" data-info="The County Museum in Greater Bečerek was founded"></span>
+                                    </div>
+                                    <div class="input">
+                                        <span data-year="1908" data-info="Construction of the court palace completed"></span>
+                                    </div>
+                                    <div class="input">
+                                        <span data-year="1914" data-info="World War I began"></span>
+                                    </div>
+                                    <div class="input">
+                                        <span data-year="1918" data-info="Serbian People's Council established in Greater Beckrek"></span>
+                                    </div>
+                                    <div class="input">
+                                        <span data-year="1926" data-info="Monument to King Peter Karadjordjevic unveiled in the city center"></span>
+                                    </div>
+                                    <div class="input">
+                                        <span data-year="1941" data-info="Entering the city of German occupation troops, the beginning of World War II"></span>
+                                    </div>
+                                    <div class="input">
+                                        <span data-year="1944" data-info="Red Army units and partisan detachments liberated the city"></span>
+                                    </div>
+                                    <div class="input">
+                                        <span data-year="1952" data-info="SFRY President Josip Broz Tito unveils the monument to Zarko Zrenjanin"></span>
+                                    </div>
+                                    <div class="input">
+                                        <span data-year="1960" data-info="The Higher Technical Mechanical Engineering Technology Schools started"></span>
+                                    </div>
+                                    <div class="input">
+                                        <span data-year="1961" data-info="The Madison Sports Hall was built, the oldest dedicated sports hall"></span>
+                                    </div>
+                                    <div class="input">
+                                        <span data-year="1969" data-info="The Great Iron - the Eiffel - Bridge, was demolished"></span>
+                                    </div>
+                                    <div class="input">
+                                        <span data-year="1984" data-info="Youth choir Koca Kolarov wins the title Summa cum laude"></span>
+                                    </div>
+                                    <div class="input">
+                                        <span data-year="1987" data-info="Music Society Choir Josif Marinkovic won the title"></span>
+                                    </div>
+                                    <div class="input">
+                                        <span data-year="2000" data-info="More than twenty thousand people participated in the protests"></span>
+                                    </div>
+                                    <div class="input">
+                                        <span data-year="2003" data-info="An unprecedented storm ravaged the city"></span>
+                                    </div>
+
+                                    <div class="input">
+                                        <span data-year="2006" data-info="Crown Prince Alexander Karadjordjevic unveiled the monument"></span>
+                                    </div>
+
+                                    <div class="input">
+                                        <span data-year="2007" data-info="The first foreign companies within the new industrial zones started to operate"></span>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--==================================================================-->
+                    <div class="div-galerija" id="5">
+                        <div class="link-galerija">
+                            GALLERY
+                        </div>
+
+                        <div class="galerija-title">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="galerija-title-1">Discover </div>
+                                    <div class="galerija-title-2">Zrenjanin </div>
+                                    <hr class="galerija-title-hr"/>
+                                    <div class="galerija-title-3"> 
+                                        Explore undiscovered gems and find
+                                        information on how to make your next vacation unforgettable
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div id="carouselGal" class="carousel slide"   data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="row">
+                                    <div class="carousel-item active"> <img  src="https://upload.wikimedia.org/wikipedia/commons/d/db/Centar%2C_Zrenjanin%2C_Serbia_-_panoramio.jpg"/> </div>
+                                    <div class="carousel-item"> <img src="http://www.masina.rs/wp-content/uploads/2018/03/Alexzr88.jpg"/> </div>
+                                    <div class="carousel-item"> <img src="http://rtvsantos.com/wp-content/uploads/2017/08/Centar-Zrenjanina_resize-1.jpg"/> </div>
+                                    <div class="carousel-item"> <img src="https://media.ilovezrenjanin.com/2019/01/grad-panorama-zrenjanin-dron.jpg"/> </div>
+                                    <div class="carousel-item"> <img src="https://upload.wikimedia.org/wikipedia/commons/4/48/Zrenjanin_city_hall.jpg"/> </div>
+                                    <div class="carousel-item"> <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Trg_slobode_-_Zrenjanin.jpg"/> </div>
+                                    <div class="carousel-item"> <img src="http://zrenjaninonline.info/zrenjanin.jpg"/> </div>
+                                    <div class="carousel-item"> <img src="http://plezirmagazin.net/wp-content/uploads/2017/11/GRAD-MOSTOVA-ZRENJANIN-9.jpg"/> </div>
+                                    <div class="carousel-item"> <img src="http://www.kss.rs/wp-content/uploads/GUZ_5130.jpg"/> </div>
+                                    <div class="carousel-item"> <img src="http://www.filminserbia.com/wp-content/uploads/2015/06/zrenjanin-1.jpg"/> </div>
+                                    <div class="carousel-item"> <img src="https://www.dubinskopranjezrenjanin.co.rs/wp-content/uploads/2018/02/zrenjanin.jpg"/> </div>
+                                    <div class="carousel-item"> <img src="https://bit.ly/33O5VhA"/> </div>
+                                    <div class="carousel-item"> <img src="https://i.pinimg.com/originals/e9/dc/db/e9dcdb4b6b5d7e83597739f490b8fba9.jpg"/> </div>
+                                    <div class="carousel-item"> <img src="http://gsigma.rs/blog/wp-content/uploads/2017/10/IMG_6924.jpg"/> </div>
+                                    <div class="carousel-item"> <img src="https://scontent-iad3-1.cdninstagram.com/vp/727a6ba65a7ac9b85347390bb40a0bc5/5D7D3BB7/t51.2885-15/e35/62028148_175099313492703_3096996501777899234_n.jpg?_nc_ht=scontent-iad3-1.cdninstagram.com"/> </div>
+                                    <div class="carousel-item"> <img src="https://www.sigmaexcl.com/wp-content/uploads/2018/06/selo-grad.jpg"/> </div>
+                                </div>
+                            </div>                         
+                        </div>
+                        <div id="carouselThumb" class="carousel slide"  data-interval="false" >
+                            <div class="carousel-inner">
+                                <div class="carousel-item thumb-images active " >
+                                    <div class="row">
+                                        <div data-target="#carouselGal" data-slide-to="0" class="col"><img src="https://upload.wikimedia.org/wikipedia/commons/d/db/Centar%2C_Zrenjanin%2C_Serbia_-_panoramio.jpg"/></div>
+                                        <div data-target="#carouselGal" data-slide-to="1" class="col"><img src="http://www.masina.rs/wp-content/uploads/2018/03/Alexzr88.jpg"/></div>
+                                        <div data-target="#carouselGal" data-slide-to="2" class="col"><img src="http://rtvsantos.com/wp-content/uploads/2017/08/Centar-Zrenjanina_resize-1.jpg"/></div>
+                                        <div data-target="#carouselGal" data-slide-to="3" class="col"><img src="https://media.ilovezrenjanin.com/2019/01/grad-panorama-zrenjanin-dron.jpg"/></div>
+                                        <div data-target="#carouselGal" data-slide-to="4" class="col"><img src="https://upload.wikimedia.org/wikipedia/commons/4/48/Zrenjanin_city_hall.jpg"/></div>
+                                        <div data-target="#carouselGal" data-slide-to="5" class="col"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Trg_slobode_-_Zrenjanin.jpg"/></div>
+                                        <div data-target="#carouselGal" data-slide-to="6" class="col"><img src="http://zrenjaninonline.info/zrenjanin.jpg"/></div>
+                                        <div data-target="#carouselGal" data-slide-to="7" class="col"><img src="http://plezirmagazin.net/wp-content/uploads/2017/11/GRAD-MOSTOVA-ZRENJANIN-9.jpg"/></div>
+
+
+                                    </div>
+                                </div>
+                                <div class="carousel-item thumb-images" >
+                                    <div class="row">
+                                        <div data-target="#carouselGal" data-slide-to="8" class="col"><img src="http://www.kss.rs/wp-content/uploads/GUZ_5130.jpg"/></div>
+                                        <div data-target="#carouselGal" data-slide-to="9" class="col"><img src="http://www.filminserbia.com/wp-content/uploads/2015/06/zrenjanin-1.jpg"/></div>
+                                        <div data-target="#carouselGal" data-slide-to="10" class="col"><img src="https://www.dubinskopranjezrenjanin.co.rs/wp-content/uploads/2018/02/zrenjanin.jpg"/></div>
+                                        <div data-target="#carouselGal" data-slide-to="11" class="col"><img src="https://bit.ly/33O5VhA"/></div>
+                                        <div data-target="#carouselGal" data-slide-to="12" class="col"><img src="https://i.pinimg.com/originals/e9/dc/db/e9dcdb4b6b5d7e83597739f490b8fba9.jpg"/></div>
+                                        <div data-target="#carouselGal" data-slide-to="13" class="col"><img src="http://gsigma.rs/blog/wp-content/uploads/2017/10/IMG_6924.jpg"/></div>
+                                        <div data-target="#carouselGal" data-slide-to="14" class="col"><img src="https://scontent-iad3-1.cdninstagram.com/vp/727a6ba65a7ac9b85347390bb40a0bc5/5D7D3BB7/t51.2885-15/e35/62028148_175099313492703_3096996501777899234_n.jpg?_nc_ht=scontent-iad3-1.cdninstagram.com"/></div>
+                                        <div data-target="#carouselGal" data-slide-to="15" class="col"><img src="https://www.sigmaexcl.com/wp-content/uploads/2018/06/selo-grad.jpg"/></div>
+
+
+                                    </div>
+                                </div>
+
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselThumb"  role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselThumb"  role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+
+                    </div>
+                    <!--==================================================================-->
+                    <div class="div-linkovi-2" >
+
+                        <div id="carouselExample2" class="carousel slide"  data-interval="false" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item link-images active " >
+
+
+                                    <div class="row">
+                                        <div class="col" >
+                                            <a href="http://www.zajednicizajedno.nis.eu" target="blank">
+                                                <img src="http://www.zajednicizajedno.nis.eu/assets/img/nis-zz-front-background-original.jpg"/>
+
+                                            </a>
+                                        </div>
+                                        <div class="col" >
+                                            <a href="http://visitzrenjanin.com/" target="blank" >
+                                                <img src="https://turizmo.rs/magazin/wp-content/uploads/2018/12/turisticka-organizacija-srb.jpg"/>
+
+                                            </a>
+                                        </div>
+                                        <div class="col">
+                                            <a href="https://www.euprava.gov.rs/" target="blank" >
+                                                <img src="https://www.euprava.gov.rs/ResourceManager/GetImage.aspx?imgId=41054"/>
+
+                                            </a>
+                                        </div>
+                                        <div class="col">
+                                            <a href="http://gis.zrenjanin.rs/"  target="blank">
+                                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2ZFj3EWo0Ae7M1Cs08ZQUG-RbQ0Jb2LnJjj0rEqCj6f5sGC15zw"/>
+                                                <h6>Gis center</h6>
+                                            </a>
+                                        </div>
+                                        <div class="col">
+                                            <a href="http://www.stat.gov.rs/oblasti/popis/popis-2021/"  target="blank">
+                                                <img src="http://www.infokg.rs/files/popis.jpg"/>
+                                                <h6>Census</h6>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="carousel-item link-images" >
+                                    <div class="row">
+                                        <div class="col">
+                                            <a href="http://popispoljoprivrede.stat.rs/popis/spg/" target="blank">
+                                                <img src="http://popispoljoprivrede.stat.rs/popis/spg/wp-content/uploads/2018/02/final-logo-spg.png"/>
+
+                                            </a>
+                                        </div>
+                                        <div class="col">
+                                            <a href="http://www.sepa.gov.rs/" target="blank" >
+                                                <img src="http://www.energosistembrcko.com/wp-content/uploads/2018/04/ekologija.jpg"/>
+                                                <h6>Environmental Protection</h6>
+                                            </a>
+                                        </div>
+                                        <div class="col">
+                                            <a href="http://sistem48.zrenjanin.rs/" target="blank" >
+                                                <img src="https://sremskevesti.rs/wp-content/uploads/2016/02/korisno-SISTEM48.jpg"/>
+
+                                            </a>
+                                        </div>
+                                        <div class="col">
+
+                                        </div>
+                                        <div class="col">
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExample2" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExample2" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <!--==================================================================-->
+                    <div class="div-kontakt" id="6">
+
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="link-kontakt">
+                                    CONTACT
+                                </div>
+                                <div class="kontakt-box">
+                                    <div class="kontakt-naslov">
+                                        <h3>Ask</h3>
+                                        <h2>mayor</h2>
+                                    </div>
+                                    <hr class="kontakt-hr"/>
+                                    <div class="kontakt-tekst">
+                                        This page is open for your questions to the Mayor of Zrenjanin
+                                        Cedomir Janjic, to which his associates and he, or
+                                        forward them to the appropriate city services if they are in
+                                        their annoyance. We are also open to suggestions or suggestions,
+                                        and to contact us you need to complete the form, a
+                                        mandatory fields are marked with an asterisk. An answer will be provided to you
+                                        to the email you provided in the form.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="forma-icon">
+                                    <img src="img/chat-icon.png"/>
+                                </div>
+                                <div class="kontakt-forma">
+                                    <h:form>
+
+                                        <div class="row">
+                                            <div class="col-lg-5">
+                                                <h:inputText styleClass="text-1" required="true" requiredMessage="Name is required!" value="#{server.name}" p:placeholder="Name*"/>
+                                                <h:inputText styleClass="text-2" required="true" requiredMessage="Lastname is required!" value="#{server.lastName}" p:placeholder="Lastname*"/>
+                                                <h:inputText styleClass="text-3" required="true" requiredMessage="E-mail is required!" value="#{server.userEmail}" p:placeholder="E-mail*"/>
+                                                <h:messages styleClass="h-message-1"/>
+                                            </div>
+                                            <div class="col">
+                                                <h:inputText styleClass="text-1" required="true" requiredMessage="Subject is requierd!" value="#{server.subject}" p:placeholder="Subject*"/>
+                                                <h:inputTextarea styleClass="text-5" p:placeholder="Message" value="#{server.message}"/>
+                                                <h:commandButton styleClass="button-6" action="#{server.sendInfoEn}"  value="Send"/>
+
+                                            </div>
+
+                                        </div>
+
+                                    </h:form>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </ui:define>
+
+        </ui:composition>
+
+    </body>
+</html>
