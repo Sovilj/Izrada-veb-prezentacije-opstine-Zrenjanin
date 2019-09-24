@@ -9,3 +9,4 @@ src folder - izvor samog koda HTML CSS JS JSF
 
 .bak je backup baze podataka kreiran u MSSQL
 
+.docx - sam diplomski na osnovu projekta
